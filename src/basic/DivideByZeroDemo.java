@@ -19,9 +19,14 @@ public class DivideByZeroDemo {
 
 //    double result = 5 / 0.0;    //Infinity
 
-    double result = 5 % 0.0;    //NaN(Not a Number)
-    System.out.printf("5 나누기 2.0의 나머지는 %.2f 입니다.", result);
+//    double result = 5 % 0.0;    //NaN(Not a Number)
+//    System.out.printf("5 나누기 2.0의 나머지는 %.2f 입니다.", result);
 
-
+    //주소값 비교
+    Scanner in1 = new Scanner(System.in);
+    Scanner in2 = new Scanner(System.in);
+    System.out.println("Scanner 각각 생성 후 비교 : " + (in2 == in1));
+    in2 = in1;
+    System.out.println("Scanner 주소값 복사 후 비교 : " + (in2 == in1));
   }
 }
