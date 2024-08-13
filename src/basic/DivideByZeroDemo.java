@@ -19,8 +19,6 @@ public class DivideByZeroDemo {
 
 //    double result = 5 / 0.0;    //Infinity
 
-//    double result = 5 / 2.0;
-
     double result = 5 % 0.0;    //NaN(Not a Number)
     System.out.printf("5 나누기 2.0의 나머지는 %.2f 입니다.", result);
 
