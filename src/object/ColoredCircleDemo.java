@@ -4,19 +4,19 @@ public class ColoredCircleDemo {
   public static void main(String[] args) {
     ColoredCircle cc1 = new ColoredCircle();
     System.out.printf("1번 원의 반지름 : %d, 색깔 : %s\n", cc1.r, cc1.color);
-    cc1.showStatus();
+    ColoredCircle.showStatus();
 
     ColoredCircle cc2 = new ColoredCircle("Yellow");
     System.out.printf("2번 원의 반지름 : %d, 색깔 : %s\n", cc2.r, cc2.color);
-    cc2.showStatus();
+    ColoredCircle.showStatus();
 
     ColoredCircle cc3 = new ColoredCircle(10);
     System.out.printf("3번 원의 반지름 : %d, 색깔 : %s\n", cc3.r, cc3.color);
-    cc3.showStatus();
+    ColoredCircle.showStatus();
 
     ColoredCircle cc4 = new ColoredCircle(9, "Blue");
     System.out.printf("4번 원의 반지름 : %d, 색깔 : %s\n", cc4.r, cc4.color);
-    cc4.showStatus();
+    ColoredCircle.showStatus();
   }
 }
 
