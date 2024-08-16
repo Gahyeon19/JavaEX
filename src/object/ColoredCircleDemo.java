@@ -66,8 +66,18 @@ class ColoredCircle{
   }
 
   //멤버 - 매서드
-  public void showStatus(){
+  public static void showStatus(){  //정적 매서드
+    //정적 매서드는 정적 변수와 정적 매서드만 사용할 수 있다.
     System.out.println(numOfCircles + "번째 원이 생성되었습니다.");
+    getNumOfCircles();
+  }
+
+  public static int getNumOfCircles(){
+    return numOfCircles;
+  }
+
+  public void setColor(String color){   //인스턴스 매서드
+    this.color = color;
   }
 
 }
