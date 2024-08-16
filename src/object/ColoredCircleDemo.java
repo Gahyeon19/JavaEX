@@ -3,19 +3,26 @@ package object;
 public class ColoredCircleDemo {
   public static void main(String[] args) {
     ColoredCircle cc1 = new ColoredCircle();
-    ColoredCircle cc2 = new ColoredCircle("Yellow");
-    ColoredCircle cc3 = new ColoredCircle(10);
-    ColoredCircle cc4 = new ColoredCircle(9, "Blue");
-
     System.out.printf("1번 원의 반지름 : %d, 색깔 : %s\n", cc1.r, cc1.color);
+    cc1.showStatus();
+
+    ColoredCircle cc2 = new ColoredCircle("Yellow");
     System.out.printf("2번 원의 반지름 : %d, 색깔 : %s\n", cc2.r, cc2.color);
+    cc2.showStatus();
+
+    ColoredCircle cc3 = new ColoredCircle(10);
     System.out.printf("3번 원의 반지름 : %d, 색깔 : %s\n", cc3.r, cc3.color);
+    cc3.showStatus();
+
+    ColoredCircle cc4 = new ColoredCircle(9, "Blue");
     System.out.printf("4번 원의 반지름 : %d, 색깔 : %s\n", cc4.r, cc4.color);
+    cc4.showStatus();
   }
 }
 
 class ColoredCircle{
   //멤버 - 필드
+  static int numOfCircles=0;    //static 정적 변수 사용
   int r;
   String color;
 
@@ -55,9 +62,12 @@ class ColoredCircle{
       this.color = color;
     }
 
+    numOfCircles++;
   }
 
   //멤버 - 매서드
-
+  public void showStatus(){
+    System.out.println(numOfCircles + "번째 원이 생성되었습니다.");
+  }
 
 }
