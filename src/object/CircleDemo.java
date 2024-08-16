@@ -2,7 +2,7 @@ package object;
 
 public class CircleDemo {
   public static void main(String[] args) {
-    Circle c1 = new Circle();
+    Circle c1 = new Circle(2);
 
     c1.setRadius(9);
     c1.printRadius();

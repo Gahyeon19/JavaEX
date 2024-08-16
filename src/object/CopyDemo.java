@@ -6,7 +6,7 @@ public class CopyDemo {
     System.out.println("ten : " + ten);
     copyByValue(ten);
 
-    Circle c1 = new Circle(); //0x100
+    Circle c1 = new Circle(1); //0x100
     System.out.println("c1의 반지름 : " + c1.getRadius());
     copyByReference(c1);
   }
@@ -24,7 +24,7 @@ public class CopyDemo {
   }
 
   public static void copyByReference(Circle c1){    //read and write
-    Circle c2 = new Circle(); //0x200
+    Circle c2 = new Circle(1); //0x200
 
 //    System.out.println("인스턴스 생성 후");
 //    System.out.println("c1의 반지름 : " + c1.getRadius()); //1

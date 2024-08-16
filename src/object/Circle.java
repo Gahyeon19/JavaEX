@@ -4,10 +4,16 @@ class Circle {
   // 필드
   private int radius = 1;
   static final double PI = Math.PI;
-  //생성자 (기본생성자, ...)
-//  public Circle(){
-//
-//  }
+
+  //생성자 -m "생성자 practice"
+  public Circle(int radius){
+    if (radius <= 0){
+      System.out.println("원의 반지름은 0보다 커야 합니다.");
+    }
+    else {
+      this.radius = radius;
+    }
+  }
 
   //Alt + Insert 키로 자동생성 가능
   public int getRadius() {
@@ -22,7 +28,6 @@ class Circle {
       this.radius = radius;
     }
   }
-
 
   //매서드
   /**
