@@ -6,6 +6,6 @@ public class CircleDemo {
 
     c1.setRadius(9);
     c1.printRadius();
-    System.out.println("원의 넓이 : " + c1.getArea());
+    System.out.println("원의 넓이 : " + Math.round(c1.getArea()));  //반올림
   }
 }

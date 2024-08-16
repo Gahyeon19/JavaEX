@@ -39,8 +39,9 @@ class Circle {
    * 매개변수X, 리턴값O (double)
    */
   public double getArea(){
-    final double PI = 3.14;
-    double area =  radius * radius * PI;
+
+//    final double PI = 3.14;
+    double area =  radius * radius * Math.PI;
     return area;
   }
 }
