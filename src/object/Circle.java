@@ -1,5 +1,7 @@
 package object;
 
+import java.awt.geom.Area;
+
 class Circle {
   // 필드
   private int radius = 1;
@@ -46,6 +48,18 @@ class Circle {
   public double getArea(){
 //    final double PI = 3.14;
     double area =  radius * radius * PI;
-    return area;
+    return (Math.round(area*100)/100.0);  //소수 둘째자리까지 반환
   }
+
+  @Override
+  public String toString(){   //toString 재정의
+    return "반지름이 " + radius + "인 원의 넓이 : " + getArea();
+  }
+
+//  @Override     //Alt+Insert 키 눌러서 자동생성된 toString 매서드
+//  public String toString() {
+//    return "Circle{" +
+//        "radius=" + radius +
+//        '}';
+//  }
 }

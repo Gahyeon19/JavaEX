@@ -26,11 +26,11 @@ public class CircleArrayDemo {
 
     for (Circle circle : circles) {
       if (circle != null){
-        double Area = circle.getArea();
-        System.out.printf("반지름이 %d인 원의 넓이 : %.3f\n", circle.getRadius(), Area);
+//        double Area = circle.getArea();
+        System.out.println(circle.toString());    //Circle.java에서 재정의한 toString 매서드
       }
       else {
-        System.out.println("생성된 객체가 없습니다.");
+//        System.out.println("생성된 객체가 없습니다.");
         break;
       }
     }
