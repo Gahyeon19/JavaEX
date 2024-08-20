@@ -24,5 +24,11 @@ public class ArrayDemo4 {
     System.out.printf("합계 : %d , 평균 : %.2f", sum, avg);
 
 
+    ////////////////////////////////////////////////////////////////
+//    sum = 0L;
+//    for (long price : prices) {   //prices 배열에서 price를 하나씩 갖고 온다.
+//      sum += price;
+//    }
+
   }
 }
