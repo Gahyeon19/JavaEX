@@ -9,7 +9,7 @@ public class InstanceOfDemo3 {
     //넓이가 같으면 true 로 반환해주는 equals 매소드 추가(FigureInheritDemo.java)
     System.out.println(t1.equals(t2));  //true
     System.out.println(t1.equals(t3));  //false
-    
+
   }
 }
 
