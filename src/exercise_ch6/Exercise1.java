@@ -1,4 +1,4 @@
-package exercise;
+package exercise_ch6;
 
 //강의자료 6.상속 - 프로그래밍 문제 1
 public class Exercise1 {
