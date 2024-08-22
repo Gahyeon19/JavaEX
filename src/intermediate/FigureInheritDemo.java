@@ -22,21 +22,6 @@ class Pentagon extends Figure{
 
 }
 
-class Rectangular extends Figure{
-//  private int poly = 4;
-  private int height;
-  private int width;
-
-  public Rectangular(int poly, int height, int width) {
-    this.height = height;
-    this.width = width;
-  }
-
-  @Override
-  public double getArea() {
-    return height * width;
-  }
-}
 
 class Triangle extends Figure{
 //  private int poly = 3;
@@ -52,5 +37,41 @@ class Triangle extends Figure{
   public double getArea() {
     double area = (double) width * height / 2;
     return area;
+  }
+
+  //height, width 상관없이 넓이만 같으면 true 를 반환하는 equals 매소드
+  @Override
+  public boolean equals(Object obj) {
+    if (obj instanceof Triangle){
+      Triangle t = (Triangle) obj;
+      return this.getArea() == t.getArea();
+    }
+    return false;
+  }
+}
+
+class Rectangular extends Figure{
+  //  private int poly = 4;
+  private int height;
+  private int width;
+
+  public Rectangular(int poly, int height, int width) {
+    this.height = height;
+    this.width = width;
+  }
+
+  @Override
+  public double getArea() {
+    return height * width;
+  }
+
+  //height, width 상관없이 넓이만 같으면 true 를 반환하는 equals 매소드
+  @Override
+  public boolean equals(Object obj) {
+    if (obj instanceof Rectangular){
+      Rectangular r = (Rectangular) obj;
+      return this.getArea() == r.getArea();
+    }
+    return false;
   }
 }
