@@ -130,7 +130,11 @@ class Menu{
 
 //은행 코드(신한, 국민, 카카오, 우리, 토스, 농협, )
 class BankCode{
-  String bankcode = "신한";
+  private final static int Shinhan = 1;
+  private final static int KB = 2;
+  private final static int Kakao = 3;
+  private final static int Woori = 4;
+  private final static int Toss = 5;
 }
 
 //처리 상태(정상/오류)
