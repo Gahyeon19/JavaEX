@@ -27,7 +27,7 @@ public class DBDemo1 {
   }
 
   public static Connection makeConnection(){
-    String url = "jdbc:mysql://localhost/javaex?serverTimezone=Asia/Seoul";
+    String url = "jdbc:mysql://localhost:3306/javaex?serverTimezone=Asia/Seoul";    //port 번호 변경
     Connection con = null;
 
     try {
